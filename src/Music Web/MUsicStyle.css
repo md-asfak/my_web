@@ -1,0 +1,294 @@
+/* Google font  */
+
+
+/* image import */
+
+
+:root {
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --body:#f9f6ff;
+    --max-width:75rem;
+}
+
+
+button {
+    padding: .625rem .9375rem;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+/* header section */
+
+
+.container{
+    max-width:75rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background-color: var(--purple500);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: .3125rem  .3125rem .3125rem rgba(0, 0, 0, 0.5);
+}
+
+.logo h4 {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.25rem;
+}
+nav ul li {
+    border-bottom: .125rem solid transparent;
+    transition: .2s ease-in-out;
+}
+nav ul li:hover{
+    border-bottom:0.125rem solid white;
+    transition: 0.2s ease-in-out;
+}
+
+/* main section */
+
+.hero_section {
+    background-image: url('./Image/hero_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.hero_section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    color: white;
+}
+
+.hero_section h1 {
+    font-size: 6rem;
+    
+}
+.hero_section h3 {
+    font-size: 2rem;
+   
+}
+
+/* music sectinon */
+
+.music_section {
+    padding-top: 3.125rem;
+    background-color: var(--purple500);
+    height: 100vh;
+}
+.music_section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.primary_btn{
+    background: red;
+    color: white;
+}
+
+.secendary_btn {
+    background-color: var(--purple300);
+    color: white;
+    margin: 1.875rem;
+}
+
+  .mac_img img{
+    max-width: 46.875rem;
+}
+
+.about_music {
+    padding-top: 31.25rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+/* video section */
+
+.video_section{
+    background-image: url('./Image/video.png');
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.video_section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+/* gift section  */
+
+.gift_section {
+    display: flex;
+    justify-content: center;
+    gap: 4.375rem;
+    margin-top: 6.25rem;
+}
+
+.gift_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* footer section */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 1.875rem;
+   
+}
+
+.main_footer {
+    background-color: var(--purple500);
+    margin-top: 1.25rem;
+}
+
+.shop h3 {
+    padding-bottom: .625rem;
+    border-bottom: .125rem solid white;
+    margin-bottom: .625rem;
+}
+
+/* section copyright */
+
+.copyright {
+    background-color: var(--purple600);
+    box-shadow: .3125rem  .3125rem .3125rem rgba(0, 0, 0, 0.5);
+   padding: .625rem  0 .3125rem  0;
+
+}
+
+.copyright p {
+    color: white;
+    text-align: center;
+    font-size: 1.125rem;
+    padding-top: .3125rem;
+}
+
+
+@media (min-width: 48rem){
+    .manu_ber i {
+        display: none;
+    }
+
+}
+
+
+
+@media (max-width: 48rem){
+/* nav section */
+    nav ul {
+        display: none;
+    }
+
+    .manu_ber i {
+        font-size: 2rem;
+        color: white;
+    }
+
+    /* main section */
+
+    .hero_section {
+        height: 50vh;
+    }
+
+    .hero_section h1 {
+        font-size: 3.4375rem;
+        
+    }
+    .hero_section h3 {
+        font-size: 1.5625rem;
+       
+    }
+
+    /* main section */
+    .mac_img img {
+        
+        max-width: 100%;
+        
+    }
+
+    /* music sectinon */
+
+    .ipad_img img {
+        max-width: 100%;
+    }
+
+    .music_section {
+        
+        height: 70vh;
+    } 
+
+    .about_music {
+        padding-top: 12.5rem
+       
+    }
+
+    /* video section */ 
+
+    .video_section{
+        height: 50vh;
+    }
+    
+    /* gift section  */
+
+    .gift_section {
+        flex-wrap: wrap;
+    }
+
+    .gift_card img {
+        max-width: 100%;
+    }
+
+
+        /* footer section */
+    .footer {
+            flex-wrap: wrap;
+            text-align: start;
+        
+     }
+
+    .footer .shop {
+            max-width: 9.375rem;
+    }
+
+}
